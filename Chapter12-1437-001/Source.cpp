@@ -21,6 +21,7 @@ class A
 
 int main()
 {   
+
     ////int a = 42;
     //////if (af a < 100)
     ////cout << &a << endl; 
@@ -87,6 +88,22 @@ int main()
     dynamicMatrix.push_back(row1);
     dynamicMatrix.push_back(row2);
 
+    cout << "INITIAL MATRIX contents: " << endl; 
+    for (int i = 0; i < dynamicMatrix.size(); i++)
+    {
+        for (int j = 0; j < dynamicMatrix[i].size(); j++)
+        {
+            cout << dynamicMatrix[i][j] << " ";
+        }
+        cout << "\n";
+    }
+
+    //add another row to the matrix (becuase it's dynamic!)
+
+    vector<int> row3 = { 66, 77, 33, 22 }; 
+
+    dynamicMatrix.push_back(row3); 
+    cout << "UPDATED matrix: " << endl; 
     for (int i = 0; i < dynamicMatrix.size(); i++)
     {
         for (int j = 0; j < dynamicMatrix[i].size(); j++)
